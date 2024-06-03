@@ -6,13 +6,13 @@ const Thumb = ({locations}) => {
         locations.map((location) =>(
             <div className="thumb" key={location.id}>
                 <img src={location.cover} alt={location.title}/>
-                <h3>{location.title}</h3>
+                <h2>{location.title}</h2>
             </div>
         ))
     )
 }
 
-Thumb.PropTypes ={
-    
+Thumb.propTypes ={
+    locations: PropTypes.array.isRequired
 }
 export default Thumb
