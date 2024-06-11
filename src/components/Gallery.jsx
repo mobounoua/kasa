@@ -1,4 +1,4 @@
-import Thumb from "./thumb";
+import Thumb from "./Thumb";
 import locations from "../data/locations";
 
 const Gallery = () => {
