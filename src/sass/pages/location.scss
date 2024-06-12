@@ -35,4 +35,83 @@
             font-weight: 500;
         }
     }
+    &_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &_left{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-family: Montserrat;
+                font-size: 36px;
+                color: #FF6060;
+                font-weight: 500;
+                margin: 20px 0 0 0;
+                max-width: 700px;
+            }
+            h2{
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            &_tags{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                flex-wrap: wrap;
+                .tags{
+                    background-color: #FF6060;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 5px 30px;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;                   
+                }
+            }
+        }
+        &_right{
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            box-sizing: border-box;
+            align-items: flex-end;
+            .host{
+                display: flex;
+                flex-direction: row;
+                img{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+                h3{
+                    color: #ff6060;
+                    text-align: right;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+            }
+            .rating{
+                .stars {
+                    height: 24px;
+                    margin: 6px;
+                    @media screen and (max-width: 768px) {
+                      height: 18px;
+                    }
+                  }
+            }           
+        }
+    }
+    .description_equipements{
+        display: flex;
+        gap: 70px;
+        margin-top: 25px;
+    }
 }
