@@ -5,6 +5,10 @@
     max-width: 1240px;
     margin: 0 auto;
     width: 85%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        border-radius: 5px;
+    }
     .collapse_head{
         position: relative;
         z-index: 1;
@@ -16,6 +20,10 @@
         color: white;
         border-radius: 10px;
         height: 52px;
+        @media screen and (max-width: 768px) {
+            height: 30px;
+            border-radius: 5px;
+        }
         h3{
             font-family: Montserrat;
             font-size: 18px;
@@ -24,13 +32,22 @@
             letter-spacing: 0em;
             text-align: left;
             margin-left: 10px;
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+            }
         }
         .collapse_button{
             background: none;
             border: none;
             cursor: pointer;
             margin-right: 20px;
+            @media screen and (max-width: 768px) {
+                margin-right: 10px;
+            }
             .collapse_arrow{
+                @media screen and (max-width: 768px) {
+                    height: 10px;
+                }
                 transition: transform 0.5s ease;
                 &.open{
                     transform: rotate(-180deg);
@@ -42,6 +59,7 @@
         background-color: #f6f6f6;
         margin:0;
         margin-bottom: 5px;
+        border-radius: 5px;
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 400;

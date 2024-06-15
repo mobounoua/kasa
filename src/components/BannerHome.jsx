@@ -5,7 +5,10 @@ const BannerHome = () => {
         <div className='banner'>              
             <img src={img} alt="banner"/>
             <div className="dark-filter-home"></div>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1>
+                Chez vous, 
+                partout et ailleurs
+            </h1>
         </div>
     ) 
 }
