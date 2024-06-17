@@ -7,9 +7,10 @@ import Location from "./pages/Location"
 import Error from "./pages/Error"
 
 const App = () => {
+  const basename = import.meta.env.MODE === "production" ? "/kasa" : "";
   return (
     <div>
-      <Router>
+      <Router basename = {basename} >
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
